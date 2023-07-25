@@ -117,7 +117,7 @@ function my_keydown(e) {
 function up() {
     if (player_y >= 0) {
         player_y = player_y - block_image_height;
-        console.log("altura da imagem do bloco =" + bloco_image_height);
+        console.log("altura da imagem do bloco =" + block_image_height);
         console.log("Quando a seta para cima é pressionada, X = " + player_x + " , Y = " + player_y);
         canvas.remove(player_object);
         player_update();
@@ -125,9 +125,9 @@ function up() {
 }
 
 function down() {
-    if (player_y >= 500) {
+    if (player_y <= 500) {
         player_y = player_y + block_image_height;
-        console.log("altura da imagem do bloco =" + bloco_image_height);
+        console.log("altura da imagem do bloco =" + block_image_height);
         console.log("Quando a seta para baixo é pressionada, X = " + player_x + " , Y = " + player_y);
         canvas.remove(player_object);
         player_update();
@@ -137,7 +137,7 @@ function down() {
 function left() {
     if (player_x >= 0) {
         player_x = player_x - block_image_width;
-        console.log("largura da imagem do bloco =" + bloco_image_width);
+        console.log("largura da imagem do bloco =" + block_image_width);
         console.log("Quando a seta para esquerda é pressionada, X = " + player_x + " , Y = " + player_y);
         canvas.remove(player_object);
         player_update();
@@ -148,7 +148,7 @@ function left() {
 function right() {
     if (player_x <= 850) {
         player_x = player_x + block_image_width;
-        console.log("largura da imagem do bloco =" + bloco_image_width);
+        console.log("largura da imagem do bloco =" + block_image_width);
         console.log("Quando a seta para direita é pressionada, X = " + player_x + " , Y = " + player_y);
         canvas.remove(player_object);
         player_update();
